@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15: Life on Land</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Chapter 15: Life on Land</h1>
+        <p>Learn about biodiversity, deforestation, and ecosystem restoration.</p>
+    </header>
+
+    <!-- Back to Index Button -->
+    <button class="back-button" onclick="window.location.href='index.html'">Back to Main Page</button>
+
+    <main>
+        <div class="container">
+            <!-- Left Side: Video and Chapter Information -->
+            <section class="video-info">
+                <h2>Chapter Overview</h2>
+                <div class="scrollable">
+                    <h2>Life on Land: The Adventure of Our Planet!</h2>
+                    <p>Hey there, Earth Explorers! 🌍✨</p>
+                    <p>Did you know that <strong>Life on Land</strong> is one of the most exciting chapters in our planet's story? It’s all about the incredible diversity of plants, animals, and ecosystems that make our world vibrant and alive! Imagine lush forests, sprawling grasslands, and the majestic mountains that touch the sky. This chapter focuses on how we can protect these natural wonders while ensuring a brighter future for everyone.</p>
+                    <h3>Why Does Life on Land Matter?</h3>
+                    <p>Every corner of the Earth is home to unique creatures and plants that play a vital role in our lives. From the tiniest insects to towering trees, each one contributes to the balance of our ecosystem. They help provide clean air, fresh water, and food. Plus, they give us a playground for adventure! 🏞️🌿</p>
+                    <p>However, our planet is facing some serious challenges. Deforestation, habitat loss, and climate change threaten the amazing life that exists on land. But guess what? We have the power to make a difference!</p>
+                    <h3>What Can You Do?</h3>
+                    <ol>
+                        <li><strong>Become a Nature Detective!</strong> 🕵️‍♂️🦋<br>
+                            Go on hikes or nature walks, and observe the wildlife around you. Keep a journal of what you see and learn about different species. Every creature has a story to tell!</li>
+                        <li><strong>Plant a Tree!</strong> 🌳<br>
+                            Trees are like the superheroes of our environment. They provide oxygen, shade, and homes for wildlife. Start a tree-planting project with your friends or family!</li>
+                        <li><strong>Join a Local Cleanup!</strong> ♻️<br>
+                            Participate in community cleanups to help keep parks and natural areas trash-free. You’ll not only beautify your surroundings but also protect wildlife habitats!</li>
+                        <li><strong>Learn and Share!</strong> 📚💬<br>
+                            Educate yourself about the importance of biodiversity and share your knowledge with friends and family. The more people know, the more they can help!</li>
+                    </ol>
+                    <h3>Fun Facts to Blow Your Mind! 💥</h3>
+                    <ul>
+                        <li>Did you know that there are <strong>over 80,000 species of trees</strong> worldwide? That’s a lot of shade for picnics!</li>
+                        <li>The Amazon Rainforest is home to <strong>10% of all species</strong> on Earth. It’s like the ultimate biodiversity party!</li>
+                        <li>Every year, we lose about <strong>13 million hectares of forests</strong>. That’s equivalent to the size of a country!</li>
+                    </ul>
+                    <p>Together, we can be champions for our planet! By protecting <strong>Life on Land</strong>, we’re not just saving trees and animals; we’re ensuring a healthy future for ourselves and generations to come. Let’s embark on this adventure together and make our world a better place!</p>
+                </div>
+                
+                <video id="intro-video" controls>
+                    <source src="lifeonland.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Download the material: <a href="#">Life on Land PDF</a></p>
+            </section>
+
+            <!-- Right Side: Project and Game -->
+            <section class="project-quiz">
+                <div class="project-description">
+                    <h2>Project: Reforesting a Local Park</h2>
+                    <p>Your project is to identify a local park or green area, plan a reforestation effort, and track changes in biodiversity over time using observations and data. You can document the changes through photos and data sheets, and present your findings at the end of the month.</p>
+                </div>
+
+                <!-- Project Submission Section -->
+                <div class="project-submission">
+                    <h2>Project Submission</h2>
+                    <p>Please submit your project materials below:</p>
+                
+                    <label for="project-title">Project Title:<br></label>
+                    <input type="text" id="project-title" class="project-input" placeholder="Enter your project title" required>
+                
+                    <label for="project-description">Project Description:<br></label>
+                    <textarea id="project-description" class="project-input" placeholder="Enter a brief description of your project" required></textarea>
+                
+                    <label for="upload-file">Upload Supporting Files:</label>
+                    <div class="file-upload">
+                        <label for="file-input" class="file-upload-label">Choose a file...</label>
+                        <input type="file" id="file-input" required>
+                    </div>
+                
+                    <button type="submit" class="submit-button">Submit Project</button>
+                    
+                    <div class="feedback-message" id="feedback-message"></div> <!-- Placeholder for feedback messages -->
+                </div>
+
+                <!-- Drag and Drop Waste Sorting Game -->
+                <div class="waste-sorting-game">
+                    <h2>Save the Land: Waste Sorting Challenge</h2>
+                    <p>Help save the land by sorting waste items into the right bins! Each correctly sorted item helps "restore" the damaged areas, making trees grow, flowers bloom, and animals return. Drag and drop the items below to the correct bin!</p>
+
+                    <!-- Drag and Drop Waste Sorting Game -->
+                    
+
+    
+                        <div class="waste-items" style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+                            <div class="waste-item" draggable="true" ondragstart="drag(event)" id="plastic-bottle" data-type="plastic" style="font-size: 3em;">
+                                🍼
+                            </div>
+                            <div class="waste-item" draggable="true" ondragstart="drag(event)" id="banana-peel" data-type="organic" style="font-size: 3em;">
+                                🍌
+                            </div>
+                            <div class="waste-item" draggable="true" ondragstart="drag(event)" id="newspaper" data-type="paper" style="font-size: 3em;">
+                                📰
+                            </div>
+                            <div class="waste-item" draggable="true" ondragstart="drag(event)" id="broken-toy" data-type="general-waste" style="font-size: 3em;">
+                                🧸
+                            </div>
+                            <div class="waste-item" draggable="true" ondragstart="drag(event)" id="glass-jar" data-type="general-waste" style="font-size: 3em;">
+                                🥫
+                            </div>
+                        </div>
+
+                        <!-- Bins Section (side by side) -->
+                        <div class="bins-container" style="display: flex; justify-content: space-around;">
+                            <div class="bin" id="plastic-bin" ondrop="drop(event)" ondragover="allowDrop(event)" data-type="plastic" style="text-align: center;">
+                                <span style="font-size: 3em;">🟦</span>
+                                <p style="font-size: 1.5em;">Plastic</p>
+                            </div>
+                            <div class="bin" id="paper-bin" ondrop="drop(event)" ondragover="allowDrop(event)" data-type="paper" style="text-align: center;">
+                                <span style="font-size: 3em;">🟧</span>
+                                <p style="font-size: 1.5em;">Paper</p>
+                            </div>
+                            <div class="bin" id="organic-bin" ondrop="drop(event)" ondragover="allowDrop(event)" data-type="organic" style="text-align: center;">
+                                <span style="font-size: 3em;">🟩</span>
+                                <p style="font-size: 1.5em;">Organic</p>
+                            </div>
+                            <div class="bin" id="general-waste-bin" ondrop="drop(event)" ondragover="allowDrop(event)" data-type="general-waste" style="text-align: center;">
+                                <span style="font-size: 3em;">⬜</span>
+                                <p style="font-size: 1.5em;">General Waste</p>
+                            </div>
+                        </div>
+
+                        <div id="feedback" class="feedback" style="margin-top: 20px;">
+                            <p id="feedback-text" style="font-size: 1.5em;"></p>
+                        </div>
+                    </div>
+
+
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 Save the Land Game. All rights reserved.</p>
+</footer>
+</html>
